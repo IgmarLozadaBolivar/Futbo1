@@ -2,52 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F&uacutetbol</title>
-    <link rel="shortcut icon" href="src/soccer.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,600&display=swap" rel="stylesheet">
-    <script defer="" src="https://app.embed.im/snow.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CR7: La Leyenda del Fútbol</title>
+    <link rel="shortcut icon" href="src/soccer.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,600&display=swap"
+        rel="stylesheet" />
 </head>
 
-<body style="font-family: 'JetBrains Mono', monospace; margin: 0; padding: 0; box-sizing: border-box;">
-
-    <nav class="navbar" style="background-color: #333; color: #fff; text-align: center; padding: 1px;">
-        <!-- <div class="navbar-left" style="float: left;">
-            <p href="" style="text-decoration: none; color: #fff; font-weight: bold; margin-left: 8px; font-size: 20px; margin-top: 14px;" onmouseover="this.style.cursor='pointer'; this.style.color='#00C4FF';" onmouseout="this.style.cursor='default'; this.style.color='white';">Futbol</p>
-        </div> -->
-        <div class="navbar-center" style="margin: 0 auto;">
-            <ul style="list-style: none; padding: 0;">
-                <li style="display: inline; margin: 0 10px;">
-                    <a href="#" style="text-decoration: none; color: #fff; font-weight: bold;"
-                        onmouseover="this.style.color='#00C4FF'" onmouseout="this.style.color='white'">
+<body style="
+      font-family: 'JetBrains Mono', monospace;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    ">
+    <nav class="navbar" style="
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1px;
+      ">
+        <div class="navbar-center" style="margin: 0 auto">
+            <ul style="list-style: none; padding: 0">
+                <li style="display: inline; margin: 0 10px">
+                    <a href="#" style="text-decoration: none; color: #fff; font-weight: bold"
+                        onmouseover="this.style.color='#F8DE22'" onmouseout="this.style.color='white'">
                         Inicio
                     </a>
                 </li>
-                <li style="display: inline; margin: 0 10px;">
-                    <a href="#posiciones" style="text-decoration: none; color: #fff; font-weight: bold;"
-                        onmouseover="this.style.color='#00C4FF'" onmouseout="this.style.color='white'">
-                        Posiciones
+                <li style="display: inline; margin: 0 10px">
+                    <a href="#historia" style="text-decoration: none; color: #fff; font-weight: bold"
+                        onmouseover="this.style.color='#F8DE22'" onmouseout="this.style.color='white'">
+                        Historia
                     </a>
                 </li>
-                <li style="display: inline; margin: 0 10px;">
-                    <a href="#jugadores" style="text-decoration: none; color: #fff; font-weight: bold;"
-                        onmouseover="this.style.color='#00C4FF'" onmouseout="this.style.color='white'">
-                        Jugadores
+                <li style="display: inline; margin: 0 10px">
+                    <a href="#jugadores" style="text-decoration: none; color: #fff; font-weight: bold"
+                        onmouseover="this.style.color='#F8DE22'" onmouseout="this.style.color='white'">
+                        Salon de fama
                     </a>
                 </li>
-                <li style="display: inline; margin: 0 10px;">
-                    <a href="#" style="text-decoration: none; color: #fff; font-weight: bold;"
-                        onmouseover="this.style.color='#00C4FF'" onmouseout="this.style.color='white'">
-                        Partidos
+                <li style="display: inline; margin: 0 10px">
+                    <a href="#" style="text-decoration: none; color: #fff; font-weight: bold"
+                        onmouseover="this.style.color='#F8DE22'" onmouseout="this.style.color='white'">
+                        Equipos
                     </a>
                 </li>
-                <li style="display: inline; margin: 0 10px;">
-                    <a href="#contacto" style="text-decoration: none; color: #fff; font-weight: bold;"
-                        onmouseover="this.style.color='#00C4FF'" onmouseout="this.style.color='white'">
-                        Contacto
+                <li style="display: inline; margin: 0 10px">
+                    <a href="#contacto" style="text-decoration: none; color: #fff; font-weight: bold"
+                        onmouseover="this.style.color='#F8DE22'" onmouseout="this.style.color='white'">
+                        Info+
                     </a>
                 </li>
             </ul>
@@ -55,729 +61,158 @@
     </nav>
 
     <!-- Seccion: Inicio -->
-    <section class="inicio" style="height: 100vh; width: 100%;">
-        <!-- Video de fondo -->
-        <video id="video-background"
-            style="position: fixed; top: 0; left: 0; width: 100%; height: auto; z-index: -1; opacity: 85%;" autoplay
-            muted loop>
-            <source src="src/Intro.mp4" type="video/mp4">
-        </video>
+    <section class="inicio" style="
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+          url(src/seccion.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      ">
         <!-- Contenido encima del video -->
-        <div id="content"
-            style="position: relative; z-index: 1; text-align: center; padding: 20px; color: #fff; top: 40%;">
-            <h1 onmouseover="this.style.color='#00C4FF'" onmouseout="this.style.color='white'">
+        <div id="content" style="
+          position: relative;
+          z-index: 1;
+          text-align: center;
+          padding: 20px;
+          color: #fff;
+          top: 40%;
+        ">
+            <h1 onmouseover="this.style.color='#F8DE22'" onmouseout="this.style.color='white'">
                 Inicio
             </h1>
             <p>
-                Bienvenido a nuestro sitio web dedicado al apasionante mundo del fútbol, <br>
-                diseñado para proporcionar a los aficionados un lugar <br>
-                centralizado donde pueden encontrar una amplia variedad de contenido <br>
-                relacionado con este deporte.
+                Bienvenido a "CR7: La Leyenda del Fútbol", tu fuente definitiva de
+                información <br />
+                sobre uno de los futbolistas más icónicos y talentosos de todos los
+                tiempos: <br />
+                Cristiano Ronaldo. Esta página está dedicada a celebrar la vida, la
+                carrera y <br />
+                los logros de esta superestrella del deporte mundial.
             </p>
         </div>
     </section>
 
     <!-- Salto de linea por seccion -->
-    <div id="posiciones" class="logo-seccion"
-        style="background: #333; display: flex; align-items: center; justify-content: center; border: none; ">
-        <h1 style="font-size: 2rem; color: #fff;" onmouseover="this.style.color='#00C4FF'"
+    <div id="equipos" class="logo-seccion" style="
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+      ">
+        <h1 style="font-size: 2rem; color: #fff" onmouseover="this.style.color='#F8DE22'"
             onmouseout="this.style.color='white'">
-            Tablas de posiciones
+            Equipos
         </h1>
     </div>
 
-    <!-- Seccion: Equipos & Noticias -->
-    <section class="posiciones">
-        <div class="container" style="display: flex; flex-direction: row; flex-wrap: wrap; height: 100vh;">
-            <div class="section news-section"
-                style="flex: 1; padding: 20px; border: 1px solid #ccc; background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)), url(src/seccion.jpeg); background-size: cover; background-position: center; background-attachment: fixed;">
-                <h1 style="color:white; text-align: center;">Premier League 2023/2024</h1>
-                <table style="width: 100%; border-collapse: collapse;">
-                    <caption style="font-size: 24px; margin-bottom: 10px;">
-                    </caption>
-                    <thead>
-                        <tr>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Posición
-                            </th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Equipo
-                            </th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PJ
-                            </th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PG
-                            </th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PE
-                            </th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PP
-                            </th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                GF< /th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                GC
-                            </th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                DG
-                            </th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Puntos
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/premier-league/manchester-city.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Manchester City</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">8
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+6
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">12
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/premier-league/tottenham -spurs.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Tottenham Hotspur</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">7
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">10
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/premier-league/liverpool.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Liverpool</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">8
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">10
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/premier-league/west-ham-united.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">West Ham United</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">9
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">10
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/premier-league/arsenal.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Arsenal</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">8
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">10
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <!-- Eliminatorias -->
-
-                <table style="width: 100%; border-collapse: collapse;">
-                    <h1 style="color:white; text-align: center;">BetPlay 2023/2024</h1>
-                    <caption style="font-size: 24px; margin-bottom: 10px;">
-                    </caption>
-                    <thead>
-                        <tr>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Posición</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Equipo</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PJ</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PG</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PE</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PP</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                GF</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                GC</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                DG</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Puntos</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/betplay/independiente-medellin.png" alt="Logotipo"
-                                    style="width: 16px; height: 16px;">
-                                <span style="font-size: 16px;">Independiente Medellín</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">10
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">13
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">8
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">19
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/betplay/aguilas-doradas.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Águilas Doradas</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">8
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">11
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+7
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">18
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/betplay/independiente-santa-fe.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Independiente Santa Fe</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">10
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">14
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">11
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">18
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/betplay/atletico-nacional.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Atlético Nacional</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">10
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">11
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">8
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">17
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/betplay/america-de-cali.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">América de Cali</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">10
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">11
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">6
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">16
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- Sección de Tarjetas con Imágenes y Texto -->
+    <section class="card-section" style="
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+          url(src/seccion.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      ">
+        <!-- Tarjeta 1 -->
+        <div class="card" style="position: absolute; top: 50px; left: 500px; width: 200px">
+            <a href="https://www.alnassr.sa/">
+                <img src="src/seccion.jpg" alt="Imagen 1" style="width: 100%" />
+            </a>
+            <div class="card-text" style="
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+          ">
+                <p>
+                    Al Nassr <br />
+                    23/¿?
+                </p>
             </div>
-            <div class="section teams-section"
-                style="flex: 1; padding: 20px; border: 1px solid #ccc; background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)), url(src/seccion.jpeg); background-size: cover; background-position: center; background-attachment: fixed;">
-                <h1 style="color:white; text-align: center;">La Liga 2023/2024</h1>
-                <table style="width: 100%; border-collapse: collapse;">
-                    <caption style="font-size: 24px; margin-bottom: 10px;">
-                    </caption>
-                    <thead>
-                        <tr>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Posición</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Equipo</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PJ</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PG</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PE</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PP</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                GF</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                GC</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                DG</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Puntos</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/la-liga/real-madrid.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Real Madrid</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">8
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+6
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">12
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/la-liga/girona-fc.png" alt="Logotipo" style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Girona FC</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">7
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">10
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/la-liga/barcelona-fc.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">FC Barcelona</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">8
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">10
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/la-liga/atletico-madrid-.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Atlético de Madrid</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">10
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+9
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">7
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/la-liga/atlethic-club.png" alt="Logotipo"
-                                    style="width: 24px; height: 24px;">
-                                <span style="font-size: 16px;">Athletic Club</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">6
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">7
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        </div>
 
-                <!-- Eliminatorias -->
-
-                <table style="width: 100%; border-collapse: collapse;">
-                    <h1 style="color:white; text-align: center;">Eliminatorias 2023/2026</h1>
-                    <caption style="font-size: 24px; margin-bottom: 10px;">
-                    </caption>
-                    <thead>
-                        <tr>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Posición</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Equipo</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PJ</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PG</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PE</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                PP</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                GF</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                GC</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                DG</th>
-                            <th
-                                style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; background-color: #f2f2f2; ">
-                                Puntos</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/fifa/brasil.png" alt="Logotipo" style="width: 22px; height: 22px;">
-                                <span style="font-size: 16px;">Brasil</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">3
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/fifa/uruguay.png" alt="Logotipo" style="width: 22px; height: 22px;">
-                                <span style="font-size: 16px;">Uruguay</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+2
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">3
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">3
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/fifa/argentina.png" alt="Logotipo" style="width: 22px; height: 22px;">
-                                <span style="font-size: 16px;">Argentina</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">3
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">4
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/fifa/colombia.png" alt="Logotipo" style="width: 22px; height: 22px;">
-                                <span style="font-size: 16px;">Colombia</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">3
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">5
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
-                                <img src="src/fifa/paraguay.png" alt="Logotipo" style="width: 22px; height: 22px;">
-                                <span style="font-size: 16px;">Paraguay</span>
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">1
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">+0
-                            </td>
-                            <td style="color:white; padding: 8px; text-align: center; border-bottom: 1px solid #ddd;">1
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <!-- Tarjeta 2 -->
+        <div class="card" style="position: absolute; top: 50px; right: 500px; width: 200px">
+            <a href="https://www.manutd.com/">
+                <img src="src/card2.png" alt="Imagen 2" style="width: 100%; height: 133px" />
+            </a>
+            <div class="card-text" style="
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+          ">
+                <p>
+                    Manchester United <br />
+                    21/22
+                </p>
             </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card" style="position: absolute; bottom: 50px; left: 500px; width: 200px">
+            <a href="https://www.juventus.com/it">
+                <img src="src/card.jpg" alt="Imagen 3" style="width: 100%" />
+            </a>
+            <div class="card-text" style="
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+          ">
+                <p>
+                    Juventus <br />
+                    18/21
+                </p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="card" style="position: absolute; bottom: 50px; right: 500px; width: 200px">
+            <a href="https://www.realmadrid.com/en">
+                <img src="src/card1.jpg" alt="Imagen 4" style="width: 100%" />
+            </a>
+            <div class="card-text" style="
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+          ">
+                <p>
+                    <a>Real Madrid</a><br />
+                    09/18
+                </p>
+            </div>
+        </div>
     </section>
 
-    <div class="footer"
-        style="width: 100%; height: 7vh; background: #1B1919; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.875rem;">
-        <p>Copyright &copy; All Right Reserved | Designed <a href="#" class="span"
-                style="text-decoration:none; color:#00C4FF; border-color: #1B1919; font-weight: bold;"
-                onmouseover="this.style.color='white'" onmouseout="this.style.color='#00C4FF'">By Brother's</a> 23/24
+    <div class="footer" style="
+        width: 100%;
+        height: 7vh;
+        background: #1b1919;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.875rem;
+      ">
+        <p>
+            Copyright &copy; All Right Reserved | Designed
+            <a href="#" class="span" style="
+            text-decoration: none;
+            color: #f8de22;
+            border-color: #1b1919;
+            font-weight: bold;
+          " onmouseover="this.style.color='white'" onmouseout="this.style.color='#F8DE22'">By CR7 Fan's</a>
+            23/24
         </p>
     </div>
-
 </body>
 
 </html>
